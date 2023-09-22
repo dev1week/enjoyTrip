@@ -35,7 +35,8 @@ function printBoard(){
 function clickWriteBtn(){
     writeBtn.addEventListener("click", (event) => {
         event.preventDefault();
-        window.open("boardModal.html","_blank", "width=500px, height= 500px");
+        console.log("test");
+        location.href="localhost:8080/board?action=mvAdd";
     })
 }
 

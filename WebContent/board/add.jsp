@@ -1,4 +1,4 @@
-<%@page import="java.util.List"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="com.ssafy.board.model.BoardDto"%>
 
@@ -28,7 +28,6 @@
         </div>
         <div class="col-lg-8 col-md-10 col-sm-12">
           <form id="form-register" method="POST" action="">
-          	<input type="hidden" name="action" value="add">
             <div class="mb-3">
               <label for="userid" class="form-label">작성자 ID : </label>
               <input
@@ -78,8 +77,10 @@
           alert("내용 입력!!");
           return;
         } else {
+        	const url = "${root}/board?action=add"
+        			console.log("test");
           let form = document.querySelector("#form-register");
-          form.setAttribute("action", ""${root}"/article");
+          form.setAttribute("action", url);
           form.submit();
         }
       });

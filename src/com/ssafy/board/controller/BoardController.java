@@ -32,16 +32,19 @@ public class BoardController extends HttpServlet {
 		String action = request.getParameter("action"); 
 		
 		String path = ""; 
-		
-		if(action.equals("list")) {
+		System.out.println(action); 
+		if("list".equals(action)) {
+			System.out.println("리스트 넘어감");
 			path = list(request, response); 
 			forward(request, response, path); 
-		}else if(action.equals("mvAdd")){
+		}else if("mvAdd".equals(action)){
 			path ="/board/add.jsp";
 			forward(request, response, path); 
+		}else if("add".equals(action)) {
+			System.out.println("add"); 
+			path = add(request, response); 
+			redirect(request, response, path); 
 		}
-		
-		
 	}
 	
 	private void forward(HttpServletRequest request, HttpServletResponse response, String path) throws ServletException, IOException{
@@ -66,6 +69,20 @@ public class BoardController extends HttpServlet {
 		}
 	}
 	
+	
+	static String add(HttpServletRequest request, HttpServletResponse response) {
+		
+		System.out.println("Add");
+		BoardDto boardDto = new BoardDto(); 
+		boardDto.setContent(request.getParameter("content"));
+		boardDto.setSubject(request.getParameter("subject"));
+		
+		
+		boardService.registerArticle(boardDto);
+		
+		
+		return "/board?action=list";
+	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
