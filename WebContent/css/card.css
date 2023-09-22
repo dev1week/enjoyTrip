@@ -1,0 +1,68 @@
+@import url(reset.css);
+
+/* localCard */
+.localCard{
+    width: 370px;
+    height: 200px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin: 15px;
+}
+
+.card1{
+    background-image: url(../images/locals/local1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+.card2{
+    background-image: url(../images/locals/local2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+.card3{
+    background-image: url(../images/locals/local3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+.card4{
+    background-image: url(../images/locals/local4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+.localCard p {
+    margin: 0;
+}
+
+.localName {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.localInfo{
+    display: flex;
+    align-content: center;
+}
+
+.localCard:hover{
+    transform:scale(1.05);
+}
+
+
+/* houseCard */
+
+

@@ -1,0 +1,420 @@
+@import url(reset.css);
+body{
+  height: 100vh;
+}
+
+nav{
+  cursor: pointer;
+}
+
+/* header start*/
+nav{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 10px gray !important;
+  padding: 20px;
+}
+
+
+.nav1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 40px !important;
+}
+
+.nav2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.nav1 > div > span{
+  margin-right: 20px !important;
+
+}
+
+.nav2 > div > span{
+  margin-right: 20px !important;
+}
+
+
+a{
+  color: #6C757D !important;
+}
+
+.hide{
+  display: none !important;
+} 
+
+#hero {
+  height: 430px;
+  background-image: url("../images/main.png");
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.title{
+  width: 30%;
+  position: absolute;
+  top: 23%;
+  left: 25%; 
+}
+/* .title{
+  width: 30%;
+  position: relative;
+  top: 17%;
+  left: 25%;
+}
+
+.title{
+  font-size:4.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.title2{
+  font-size: 7rem;
+  position: absolute;
+  top: 80px;
+} */
+
+
+
+.signUpBtn{
+  font-size: 12px;
+  text-align: right;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.cardHeader{
+  font-weight: bold;
+}
+
+.loginCard, .profileCard {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 8px;
+  text-align: center;
+  float: right;
+  margin-right: 5%;
+  /* margin-top: 100px; */
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 300px;
+}
+
+.loginCard-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subTxt{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subTxt p {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+
+.loginCard-body button{
+  margin-top: 10px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img{
+  width: fit-content;
+}
+
+
+.makePlanBtn{
+  margin-top: 10px !important;
+}
+
+.weather-container{
+  padding: 0 30px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.weathers {
+  width: 80%;
+  margin: 0 auto;
+  margin: 50px 0;
+  display: flex; /* 가로 정렬을 위한 flex 설정 */
+  justify-content: center;
+  flex-wrap: wrap; /* 요소들이 넘칠 경우 줄 바꿈 */
+}
+
+.card{
+  margin: 25px;
+}
+
+.logo a{
+  color: #055160 !important;
+}
+/* footer 태그 안에 CSS 속성 */
+footer {
+  /* 맨 아래 고정을 위한 설정 */
+
+  /* 배경색과 글자색 */
+  background-color: #62c5ff;
+  color: white;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list a {
+  margin: 0px 10px;
+}
+
+
+
+/* 지역별 관광지 조회 */
+.contents-container{
+  margin-top: 50px;
+}
+
+/* progressbar */
+.progressSpace{
+  margin : 30px 0 20px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.progressbar{
+  width: 70%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #F8F9FA;
+  box-shadow: inset 0 0.5em 0.5em rgba(0,0,0,0.05);
+}
+
+/* localCard */
+.localCard-container{
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding-top: 30px; */
+  margin: 0 auto;
+}
+
+.houseCard-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns:  repeat(auto-fill,minmax(20%,auto));
+  grid-area: 10px;
+  margin: 0 auto ;
+}
+
+
+/* 회원가입 */
+.container{
+  width: 450px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.joinP{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container div{
+  margin: 10px 0;
+  width: 450px;
+}
+
+.typeContainer input{
+  padding: 8px;
+  width: 80%;
+  border: none;
+  margin-right: 5px;
+  background-color: whitesmoke;
+}
+
+.typeContainer p{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* .makeBtn{
+  background-color: #17A2B8
+} */
+
+
+
+/* myPage */
+.myPage-container {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.myPage-container p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.myPage-typeContainer {
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.myPage-typeContainer div{
+  margin: 7px;
+}
+
+.myPage-typeContainer img{
+  width: fit-content;
+}
+
+.myPage-typeContainer input{
+  padding: 8px;
+  width: 270px;
+  border: none;
+  margin-right: 5px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.myPageBtns{  
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+}
+
+.myPageBtns input{
+  width: 130px
+}
+
+.modifyBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #17A2B8;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+
+
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #CFF4FC;
+  cursor: pointer;
+  color: #62C5FF;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: #62C5FF;
+  color: #CFF4FC;
+}
+
+/* board */
+.tableTitle{
+  font-size: 24px;
+  text-align: center;
+}
+
+.table-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.table{
+  width: 100%;
+}
+
+.logBtns{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tc{
+  width: 80%;
+}
+
+td{
+  padding: 10px;
+}
+
+.mylog-container{
+  height: 90%;
+}
+
+.mylog-space{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+}
+
+.routeCard{
+  width: 330px;
+  height: 200px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin: 10px;
+  background-color: #62C5FF;
+  color: #fff;
+}
+
+.routeCard:hover {
+  transform: scale(1.05);
+}
+
+.routeCard p {
+  font-size: 18px;
+  font-weight: bold;
+}

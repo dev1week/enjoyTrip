@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/planning.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- nav 바 만들기  -->
+    
+    <!-- 중앙 content -->
+        <div class="container" id="continer">
+            <nav id="nav"class="navbar navbar-expand-xl bg-light navbar-light shadow ">
+                <div class="container-fluid">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">여행하 개'</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">나의 여행 계획</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">여행기록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">회원가입</a>
+                    </li>
+                  </ul>
+                  <img src="./images/icon/main_icon.png" id="logo"/>
+                </div>
+              </nav>
+              <div class="logo-container"> 
+                <img src="./images/icon/main_icon.png" id="progress_img"/>
+              </div>
+              <div class="progress"id="bar">
+                
+                <div class="progress-bar" style="width:70%">70%</div>
+              </div>
+            <div class="row" id="sandbox">
+                <div class="col-md-3" id="box">
+                  <form class="d-flex my-3" onsubmit="return false;" role="search">
+                    <select id="search-area" class="form-select me-2">
+                      <option value="1" selected>현재 지도 기준</option>
+                    </select>
+                    <select id="search-content-id" class="form-select me-2">
+                      <option value="12">관광지</option>
+                      <option value="14">문화시설</option>
+                      <option value="15">축제공연행사</option>
+                      <option value="25">여행코스</option>
+                      <option value="28">레포츠</option>
+                      <option value="32">숙박</option>
+                      <option value="38">쇼핑</option>
+                      <option value="39">음식점</option>
+                    </select>
+                    <select id="search-distance" class="form-select me-2">
+                      <option value="1000" selected>1km 이내</option>
+                      <option value="5000" >5km 이내</option>
+                      <option value="10000">10km 이내</option>
+                      <option value="200000">20km 이내</option>
+                    </select>
+                    <button id="btn-search" class="btn btn-outline-success" type="button">검색</button>
+                  </form>
+                   <div class="candidateBox" id="box"> 
+
+                   </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="map" style="width:100%;height:800px;"></div>
+                </div>
+                <div class="col-md-3 resultBox" id="box">
+                  
+                    
+               
+                  <input type="button" value="완료" class="doneBtn">
+                </div>
+
+            </div>
+            <footer>
+                <ul class="footer-list">
+                  <li><a href="#">개인정보 처리방침</a></li>
+                  <li><a href="#">이용 약관</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                  <li>&copy; SSAFY</li>
+                </ul>
+              </footer>
+        </div>
+    <!-- 중앙 content 끝 -->
+
+
+    <!-- footer -->
+   
+    <!-- footer 끝 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	db5c9f095b955406fbbeed1a57f27d61"></script>
+    <script src="./js/planning.js"></script>
+</script>
+</body>
+</html>
