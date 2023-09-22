@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="/common/header.jsp" %>
-      <div class="row justify-content-center">
+<%-- <%@ include file="/common/header.jsp" %>--%>     
+ <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
           <h2 class="my-3 py-3 shadow-sm bg-light text-center">
             <mark class="sky">에러발생!!!</mark>
@@ -25,4 +25,4 @@
         location.href = "${root}";
       });
     </script>
-<%@ include file="/common/footer.jsp" %>
+<%-- <%@ include file="/common/footer.jsp" %> --%>
