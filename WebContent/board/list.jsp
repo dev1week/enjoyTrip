@@ -1,3 +1,10 @@
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="com.ssafy.board.model.BoardDto"%>
+
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="root" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -61,17 +68,37 @@
                 <th class="logWriter">작성자 </th>
             </tr>
             <tbody class="table-body">
+<c:forEach var="article"  items="${articles}"> 
               <tr>
-                <td class="logNum"   >01</td>
-                <td class="logTitle" >내가 가고싶다 여행</td>
-                <td class="logDate"  >2023.09.08</td>
-                <td class="logCount" >183</td>
-                <td class="logWriter">김싸피</td>
+                <td class="logNum"   >${article.articleNo}</td>
+                <td class="logTitle" >${article.subject}</td>
+                <td class="logDate"  >${article.registerTime}</td>
+                <td class="logCount" >${article.hit}</td>
+                <td class="logWriter">${article.userId}</td>
             </tr>
-  
+</c:forEach>   
             </tbody>
         </table>
+        
+        <div>
+        <div class="row">
+	        <ul class="pagination justify-content-center">
+	          <li class="page-item">
+	            <a class="page-link" href="#">이전</a>
+	          </li>
+	          <li class="page-item"><a class="page-link" href="#">1</a></li>
+	          <li class="page-item active">
+	            <a class="page-link" href="#">2</a>
+	          </li>
+	          <li class="page-item"><a class="page-link" href="#">3</a></li>
+	          <li class="page-item"><a class="page-link" href="#">4</a></li>
+	          <li class="page-item"><a class="page-link" href="#">5</a></li>
+	          <li class="page-item"><a class="page-link" href="#">다음</a></li>
+	        </ul>
+      </div>
     </div>
+    </div>
+   
     <script src="./js/board.js"></script>
   </body>
 </html>
