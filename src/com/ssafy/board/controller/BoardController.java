@@ -36,6 +36,9 @@ public class BoardController extends HttpServlet {
 		if(action.equals("list")) {
 			path = list(request, response); 
 			forward(request, response, path); 
+		}else if(action.equals("mvAdd")){
+			path ="/board/add.jsp";
+			forward(request, response, path); 
 		}
 		
 		
@@ -54,11 +57,8 @@ public class BoardController extends HttpServlet {
 	
 	static String list(HttpServletRequest request, HttpServletResponse response) {
 		try {
-			
 			ArrayList<BoardDto> list = (ArrayList<BoardDto>) boardService.searchListAll(); 
-			request.setAttribute("articles", list); 
-			
-			
+			request.setAttribute("articles", list); 		
 			return "/board/list.jsp"; 
 		}catch(Exception e) {
 			

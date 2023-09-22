@@ -99,6 +99,17 @@
     </div>
     </div>
    
-    <script src="./js/board.js"></script>
+    <script>
+    const writeBtn = document.querySelector(".writeBtn");
+    function clickWriteBtn(){
+        writeBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            console.log("test");
+            location.href="${root}/board?action=mvAdd";
+        })
+    }
+    
+    clickWriteBtn(); 
+    </script>
   </body>
 </html>
