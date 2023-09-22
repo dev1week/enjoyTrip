@@ -6,18 +6,17 @@ import java.sql.SQLException;
 
 public class DBUtil {
 
-	private final String driverName = "com.mysql.cj.jdbc.Driver";
-	private final String url = "jdbc:mysql://localhost:3306/enjoytrip?serverTimezone=UTC";
-	private final String user = "ssafy";
-	private final String pass = "ssafy";
+	
+	private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
+	private static final String URL = "jdbc:mysql://localhost:3306/enjoytrip?serverTimezone=UTC";
+	private static final String DB_ID = "ssafy";
+	private static final String DB_PWD = "ssafy";
 
-	// 1. 드라이버 로딩
 	private static DBUtil instance = new DBUtil();
 
 	private DBUtil() {
 		try {
-			Class.forName(driverName);
-			System.out.println("드라이버 로딩 완료");
+			Class.forName(DRIVER);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -27,12 +26,10 @@ public class DBUtil {
 		return instance;
 	}
 
-	// 2. DB 연결
 	public Connection getConnection() throws SQLException {
-		return DriverManager.getConnection(url, user, pass);
+		return DriverManager.getConnection(URL, DB_ID, DB_PWD);
 	}
 
-	// 5. 연결 해제, 종료
 	public void close(AutoCloseable... closeables) {
 		for (AutoCloseable c : closeables) {
 			if (c != null) {
