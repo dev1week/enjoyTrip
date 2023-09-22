@@ -1,3 +1,4 @@
+
 // signUp start
 const userId = document.querySelector("#userId");
 const userPw = document.querySelector("#userPw");
@@ -12,22 +13,16 @@ const checkFill = (id, pw, name, email) => {
     return true;
 }
 
-
 function clickJoinBtn(){
     joinBtn.addEventListener("click", ()=>{
-        let id = userId.value;
-        let pw = userPw.value;
-        let name = userName.value;
-        let email = userEmail.value;
+    	console.log("click");
         if(checkFill()){
-            const userObj = {
-                userId : id,
-                userPw : pw,
-                userName : name,
-                userEmail : email,
-            }
-    
-            localStorage.setItem("user", JSON.stringify(userObj));
+            let joinForm = document.querySelector("#joinForm")
+            let root = document.getElementById("root").value;
+            const url = `${root}/member`;
+            console.log(url);
+            joinForm.setAttribute("action", url);
+            joinForm.submit();
             opener.location.reload();
             self.close();
         }else{
