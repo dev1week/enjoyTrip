@@ -71,6 +71,28 @@
 - 로그인이 된 상태에서 navbar에 있는 로그아웃 버튼 클릭 시 로그아웃 기능.
 
 
+- 검색 후 결과 지도 마킹 기능
+
+### 6. 검색결과 표시 후 드래그 하여 계획에 포함
+![Screen Recording - Sep 8, 2023](https://github.com/dev1week/with-dog/assets/119592507/a4c019a7-1ff4-4c67-999a-ba561d25e91e)
+![image](https://github.com/dev1week/with-dog/assets/119592507/bb6f1346-74e7-4712-8e77-80c1a800fa32)
+![image](https://github.com/dev1week/with-dog/assets/119592507/582a7764-ee92-4e73-9e70-fef5d4e6bb95)
+
+
+
+
+- 검색 후 좌측 화면에 검색 결과 표현
+- 마음에 드는 지역을 드래그하여 계획에 추가가능
+
+### 7. 여행 계획 경로 설정 (계획은 로컬스토리지 저장)
+![image](https://github.com/dev1week/with-dog/assets/119592507/849bcf7e-9e73-4054-9f2b-7aca2070f23a)
+
+
+
+- 오른쪽 상단에 계획으로 넣어놓은 장소는 이름과 주소를 배열로 저장하여 **local storage에 저장**
+
+### 8. 최종 여행 계획 표시
+![image](https://github.com/dhflxhdxhd/with-dog/assets/52151533/44f08d1e-daa2-4c36-aeb8-e832fe2b9c91)
 
 
 
