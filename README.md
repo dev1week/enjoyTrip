@@ -17,64 +17,61 @@
 ## 기본기능
 
 ### 1. 메인 페이지 및 메뉴 구성
-![main](/uploads/25d0e2d4b05ceea034e7b7963a764345/main.png)
-![login](/uploads/2817eadc38056fa3e5f5242f3668a635/login.png)
-
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/3b3cb06a-cb34-4283-a9ef-f7ceec86d60c)
 
 - 메인 화면 구성
     - 로그인 카드 : 로그인, 회원가입, 여행 계획 만들기 
     - navbar : 여행기록, 마이페이지, 로그아웃 
 
 ### 2. 관광지 정보 조회
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/6cc52ae0-9fb6-4a30-8c17-234a93646b2b)
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/1006b347-6405-4219-a7ab-de16da2d4267)
 
+- 컨텐츠 아이디별 검색 가능 
+- 지역별 검색 가능 
 
 ### 3. 회원 정보 페이지
 
 #### 1) 회원 가입
-![join](/uploads/ce129c3895a999f2e01272f04e74e2ca/join.png)
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/e44aff8b-ec50-4e56-ae04-39ab6f0fee3b)
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/f08716ea-08c7-4fb6-80bf-d9372bc26759)
+
 
 - 메인페이지에서 회원가입 클릭 시 이동
 - 회원가입 기능 구현 
 
 #### 2) 회원 정보 조회
-![mypage](/uploads/fc4223f2b52b846864bbc24b636ef52f/mypage.png)
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/9746309e-f6fa-4fb5-a7d6-287b5df040b8)
+
 
 - 로그인 시 navbar에서 이동 가능
 - 마이페이지 이동 시 회원 정보 조회
 - 비밀번호는 뜨지 않게 처리.
 
 #### 3) 회원 정보 수정
-![modify](/uploads/9a35ceaa3971ff98169dab59d513af61/modify.png)
-![modify2](/uploads/f30e6fc4f0e1c525e75be352a105ca07/modify2.png)
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/7ddeb701-66b1-4115-b966-12d7ecef60f8)
+
 
 - 마이페이지에서 수정 버튼을 클릭시 회원 정보 수정 가능
 - 아이디를 제외한 비밀번호, 이름, 이메일 수정 가능 
 - 수정 버튼을 누르면 비밀번호를 뜨게 처리.
 
 #### 4) 회원 정보 삭제(탈퇴)
-![delete](/uploads/f16fc70eb8c5ae79ca0b6df5add3b1f4/delete.png)
-![main](/uploads/25d0e2d4b05ceea034e7b7963a764345/main.png)
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/dbda3850-4b91-45fe-b2f4-c1b62871c9d7)
+
 
 - 마이페이지에서 탈퇴 버튼을 누르면 회원 정보 탈퇴 가능
 - 탈퇴 시 메인 화면으로 돌아감.
 
 #### 5) 로그인 / 로그아웃
-![login](/uploads/2817eadc38056fa3e5f5242f3668a635/login.png)
-![logout](/uploads/a141faf8eb2535f13afa48648deb8fc3/logout.png)
+![image](https://github.com/dev1week/enjoyTrip/assets/119592507/f08716ea-08c7-4fb6-80bf-d9372bc26759)
 
 - 메인 화면에서 아이디, 비밀번호 입력 후 로그인 버튼 클릭 
 - 로그인되었을 경우 navbar 변경
 - 로그인이 된 상태에서 navbar에 있는 로그아웃 버튼 클릭 시 로그아웃 기능.
 
 
-## 심화기능
-#### 게시판 글 등록
 
-#### 게시판 글 목록
-
-#### 게시판 글 조회
-
-#### 게시판 글 수정
 
 
 ## 👨‍💻팀원 소개
